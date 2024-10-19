@@ -35,4 +35,4 @@ Get string as an input and find tokens in expressions
 
 >[!danger]
 > in LEX, you cannot make Balanced Parentheses as you do in CFG
-> $$L={(^n)^n}$$
+$$L={(^n)^n}$$
