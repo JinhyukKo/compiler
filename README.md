@@ -10,5 +10,5 @@ $ flex intDetector.l
 $ gcc -o intDtector lex.yy.c
 $ ./intDetector
 ```
->[!tip]
+>[!info]
 > determine if the input strings are integers or not
