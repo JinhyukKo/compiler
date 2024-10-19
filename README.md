@@ -32,3 +32,7 @@ t : tokens
 Get string as an input and find tokens in expressions
 
 ![Screenshot 2024-10-19 at 6 50 24 PM](https://github.com/user-attachments/assets/5983f157-b4ce-4ecc-9192-250dc6ee8f6d)
+
+>[!danger]
+> in LEX, you cannot make Balanced Parentheses as you do in CFG
+> $$L={(^n)^n}$$
