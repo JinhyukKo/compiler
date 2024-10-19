@@ -24,6 +24,7 @@ $ ./expression < data.txt
 ```
 
 $f(L)=t$
+
 L: langauge
 t : tokens
 Get string as an input and find tokens in mathematical expressions
