@@ -22,7 +22,7 @@ $ flex expression.l
 $ gcc -o expression lex.yy.c
 $ ./expression < data.txt
 ```
->[!tip]
+
 $f(L)=t$
 L: langauge
 t : tokens
