@@ -23,8 +23,8 @@ $ gcc -o expression lex.yy.c
 $ ./expression < data.txt
 ```
 >[!tip]
-> $f(L)=t$
-> L: langauge
-> t : tokens
-> Get string as an input and find tokens in mathematical expressions
+$f(L)=t$
+L: langauge
+t : tokens
+Get string as an input and find tokens in mathematical expressions
 
