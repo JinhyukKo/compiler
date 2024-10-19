@@ -25,7 +25,7 @@ $ gcc -o expression lex.yy.c
 $ ./expression < data.txt
 ```
 
-$f(L)=t$
+$$f(L)=t$$
 
 L: langauge 
 t : tokens
