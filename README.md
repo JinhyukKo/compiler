@@ -1,6 +1,3 @@
-Here's a README file with clear instructions and explanations for your `isExpression` parser program.
-
----
 
 # isExpression Parser
 
