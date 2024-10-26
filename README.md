@@ -14,8 +14,8 @@ $ ./isExpression
 
 this app determines if the input string is an expression or not 
 
-https://www.google.com/url?sa=i&url=https%3A%2F%2Ffaun.pub%2Fintroduction-to-lex-and-yacc-b9bafab67447&psig=AOvVaw2Gd7HGe_YMiKEIxfOMeR4X&ust=1730055071551000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiFscHbrIkDFQAAAAAdAAAAABAQ![image](https://github.com/user-attachments/assets/88419233-5399-4f90-b62b-1a42183bcdf9)
 
+![1*xmlS7NS4jrEHfe8W8CZWog](https://github.com/user-attachments/assets/156f6086-9ebe-4c52-936e-af4f4bc74c1d)
 
 <img width="182" alt="Screenshot 2024-10-26 at 8 51 55 PM" src="https://github.com/user-attachments/assets/eadd4c77-c642-4bc1-a33f-1c09818aad7a">
 <img width="201" alt="Screenshot 2024-10-26 at 8 52 56 PM" src="https://github.com/user-attachments/assets/d8e4d7da-dd19-4830-9164-cdd61393c2c8">
