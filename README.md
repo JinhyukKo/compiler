@@ -3,7 +3,33 @@
 brew install flex
 ```
 
+## isExpression ? 
+
+```bash
+$ flex tokenizer.l
+$ bison -d syntax.y
+$ gcc -o isExpression syntax.tab.c
+$ ./isExpression
+```
+
+this app determines if the input string is an expression or not 
+
+https://www.google.com/url?sa=i&url=https%3A%2F%2Ffaun.pub%2Fintroduction-to-lex-and-yacc-b9bafab67447&psig=AOvVaw2Gd7HGe_YMiKEIxfOMeR4X&ust=1730055071551000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiFscHbrIkDFQAAAAAdAAAAABAQ![image](https://github.com/user-attachments/assets/872940f7-c2cb-4d68-af2e-042155ab2255)
+<img width="182" alt="Screenshot 2024-10-26 at 8 51 55 PM" src="https://github.com/user-attachments/assets/eadd4c77-c642-4bc1-a33f-1c09818aad7a">
+<img width="201" alt="Screenshot 2024-10-26 at 8 52 56 PM" src="https://github.com/user-attachments/assets/d8e4d7da-dd19-4830-9164-cdd61393c2c8">
+<img width="161" alt="Screenshot 2024-10-26 at 8 54 15 PM" src="https://github.com/user-attachments/assets/fc475d2f-1ee5-4f08-9409-44720ef32558">
+
+
+this is the CFG of the file 
+```ebnf
+S : E ';'
+E : E '+' T | E '-' T |  T ;
+T : T'*' F | T '/' F | F ;
+F : '(' E ')' | TIDEN | TNUM ;
+```
+
 ## intDetector 
+
 
 ```bash
 $ flex intDetector.l
@@ -36,3 +62,5 @@ Get string as an input and find tokens in expressions
 >[!tip]
 > in LEX, you cannot determine Balanced Parentheses as you do in CFG
 $$L={(^n)^n}$$
+
+
