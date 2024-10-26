@@ -5,7 +5,7 @@
 %%
 [0-9]+      { printf("Int: %s\n", yytext); }
 [ \t\n]     ;  // 공백은 무시합니다.
-.           { printf("not Int: %s\n", yytext); }
+.           { printf("not int: %s\n", yytext); }
 
 %%
 
