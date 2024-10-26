@@ -2,36 +2,34 @@
     
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "lex.yy.c"
 void yyerror(const char *s);
-int yylex();
+int yylex(); // Lex에서 정의한 yylex 함수 선언
 
 %}
 
-%token TEOF TIDEN TNUM TASSIGN TADD TMUL TDIV TSEMI TDOT TERROR
+%token TIDEN TNUM
 
-%left TADD
-%left TMUL TDIV
-
-
-%%
-
-expr:
-    expr TADD expr         { printf("Add operation\n"); $$ = $1 + $3; }
-    | expr TMUL expr       { printf("Multiply operation\n"); $$ = $1 * $3; }
-    | expr TDIV expr       { printf("Division operation\n"); $$ = $1 / $3; }
-    | TNUM                 { $$ = atoi(yytext); }
-    | TIDEN
-    ;
+%left '+' '-'
+%left '*' '/'
 
 %%
+S : E ';'{
+        printf("Expression evaluated.\n");
+    };
+E : E '+' T | T ;
+T : T'*' F | F;
+F : '(' E ')' | TIDEN | TNUM;
+%%
 
-void yyerror(const char *s) {
-    fprintf(stderr, "%s\n", s);
-}
+
 
 int main() {
     printf("Enter an expression:\n");
     yyparse();
     return 0;
+}
+
+void yyerror(const char *s) {
+    fprintf(stderr, "%s\n", s);
 }

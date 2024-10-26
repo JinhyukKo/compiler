@@ -39,29 +39,13 @@
    /* Put the tokens into the symbol table, so that GDB and other debuggers
       know about them.  */
    enum yytokentype {
-     TEOF = 258,
-     TIDEN = 259,
-     TNUM = 260,
-     TASSIGN = 261,
-     TADD = 262,
-     TMUL = 263,
-     TDIV = 264,
-     TSEMI = 265,
-     TDOT = 266,
-     TERROR = 267
+     TIDEN = 258,
+     TNUM = 259
    };
 #endif
 /* Tokens.  */
-#define TEOF 258
-#define TIDEN 259
-#define TNUM 260
-#define TASSIGN 261
-#define TADD 262
-#define TMUL 263
-#define TDIV 264
-#define TSEMI 265
-#define TDOT 266
-#define TERROR 267
+#define TIDEN 258
+#define TNUM 259
 
 
 
