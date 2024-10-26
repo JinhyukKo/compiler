@@ -100,11 +100,11 @@ This README covers everything from setting up and compiling the parser to unders
 
 
 ## CFG
-this is the **CFG (Context Free Grammar ** of the file 
+this is the **CFG (Context Free Grammar ) ** of the file 
 ```ebnf
 S : E ';'
 E : E '+' T | E '-' T |  T ;
-T : T'*' F | T '/' F | F ;
+T : T '*' F | T '/' F | F ;
 F : '(' E ')' | TIDEN | TNUM ;
 ```
 
