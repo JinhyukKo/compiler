@@ -69,17 +69,13 @@ gcc -o isExpression syntax.tab.c
 ```plaintext
 Enter an expression:
 1 + 2 * (3 - 4) / 5;
-Addition operation
-Multiplication operation
-Subtraction operation
-Division operation
 Expression evaluated.
 ```
 
 ### Supported Expressions
 
 - **Arithmetic Operations:** `+`, `-`, `*`, `/`
-- **Numbers** (e.g., `42`, `3.14`)
+- **Integers** (e.g., `42`)
 - **Identifiers** (e.g., variable names like `x`, `result`)
 - **Parentheses** for grouping (e.g., `(2 + 3) * 4`)
 
@@ -103,14 +99,8 @@ This project is open-source and available under the [MIT License](LICENSE).
 This README covers everything from setting up and compiling the parser to understanding its functionality and usage. Let me know if you’d like more specific sections or customizations!
 
 
-
-
-<img width="182" alt="Screenshot 2024-10-26 at 8 51 55 PM" src="https://github.com/user-attachments/assets/eadd4c77-c642-4bc1-a33f-1c09818aad7a">
-<img width="201" alt="Screenshot 2024-10-26 at 8 52 56 PM" src="https://github.com/user-attachments/assets/d8e4d7da-dd19-4830-9164-cdd61393c2c8">
-<img width="161" alt="Screenshot 2024-10-26 at 8 54 15 PM" src="https://github.com/user-attachments/assets/fc475d2f-1ee5-4f08-9409-44720ef32558">
-
-
-this is the CFG of the file 
+## CFG
+this is the **CFG (Context Free Grammar ** of the file 
 ```ebnf
 S : E ';'
 E : E '+' T | E '-' T |  T ;
@@ -118,7 +108,7 @@ T : T'*' F | T '/' F | F ;
 F : '(' E ')' | TIDEN | TNUM ;
 ```
 
-## intDetector 
+# intDetector 
 
 
 ```bash
@@ -133,7 +123,7 @@ determine if the input strings are integers or not
 ![Screenshot 2024-10-19 at 6 45 24 PM](https://github.com/user-attachments/assets/721546da-8d72-4844-8cbb-6a73a179e43a)
 
 
-## Tokenizer
+# Tokenizer
 
 ```bash
 $ flex expression.l
