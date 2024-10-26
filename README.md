@@ -11,8 +11,8 @@ $ bison -d syntax.y
 $ gcc -o isExpression syntax.tab.c
 $ ./isExpression
 ```
-
-this app determines if the input string is an expression or not 
+>[!tip]
+> this app determines if the input string is an expression or not 
 
 
 ![1*xmlS7NS4jrEHfe8W8CZWog](https://github.com/user-attachments/assets/156f6086-9ebe-4c52-936e-af4f4bc74c1d)
