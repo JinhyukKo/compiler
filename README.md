@@ -23,7 +23,7 @@ Follow these instructions to set up, compile, and run the **isExpression** parse
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/isExpression.git
+git clone git@github.com:JinhyukKo/compiler.git
 cd isExpression
 ```
 
