@@ -3,6 +3,8 @@
 
 The **isExpression** program is a simple parser and evaluator for arithmetic expressions written in C, leveraging **Flex** and **Bison** for lexical analysis and parsing. This tool supports basic arithmetic operations, parentheses, and variable identifiers, making it a great learning resource for compiler basics.
 
+![1*xmlS7NS4jrEHfe8W8CZWog](https://github.com/user-attachments/assets/156f6086-9ebe-4c52-936e-af4f4bc74c1d)
+
 ## Features
 
 - **Supports basic arithmetic operations:** Addition (`+`), Subtraction (`-`), Multiplication (`*`), and Division (`/`)
@@ -101,7 +103,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 This README covers everything from setting up and compiling the parser to understanding its functionality and usage. Let me know if you’d like more specific sections or customizations!
 
 
-![1*xmlS7NS4jrEHfe8W8CZWog](https://github.com/user-attachments/assets/156f6086-9ebe-4c52-936e-af4f4bc74c1d)
+
 
 <img width="182" alt="Screenshot 2024-10-26 at 8 51 55 PM" src="https://github.com/user-attachments/assets/eadd4c77-c642-4bc1-a33f-1c09818aad7a">
 <img width="201" alt="Screenshot 2024-10-26 at 8 52 56 PM" src="https://github.com/user-attachments/assets/d8e4d7da-dd19-4830-9164-cdd61393c2c8">
