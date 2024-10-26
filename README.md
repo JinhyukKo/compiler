@@ -48,7 +48,7 @@ This will create `lex.yy.c`.
 #### Step 3: Compile with GCC
 
 ```bash
-gcc -o isExpression syntax.tab.c lex.yy.c -lfl
+gcc -o isExpression syntax.tab.c
 ```
 
 ### 3. Run the Program
