@@ -2,7 +2,7 @@
     
 #include <stdio.h>
 #include <stdlib.h>
-#include "lex.yy.c"
+#include "lex.yy.c" 
 void yyerror(const char *s);
 int yylex(); // Lex에서 정의한 yylex 함수 선언
 
@@ -10,16 +10,14 @@ int yylex(); // Lex에서 정의한 yylex 함수 선언
 
 %token TIDEN TNUM
 
-%left '+' '-'
-%left '*' '/'
 
 %%
 S : E ';'{
         printf("Expression evaluated.\n");
     };
-E : E '+' T | T ;
-T : T'*' F | F;
-F : '(' E ')' | TIDEN | TNUM;
+E : E '+' T | E '-' T |  T ;
+T : T'*' F | T '/' F | F ;
+F : '(' E ')' | TIDEN | TNUM ;
 %%
 
 
