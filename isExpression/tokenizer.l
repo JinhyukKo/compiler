@@ -1,7 +1,7 @@
 %{ /* 정의 부분 */
 #include <stdio.h>
 #include <stdlib.h>
-
+#incude "y.tab.h"
 enum tnumb { TEOF, TIDEN, TNUM, TASSIGN, TADD, TMUL, TDIV, TSEMI, TDOT, TERROR };
 
 %}

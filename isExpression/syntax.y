@@ -1,43 +1,27 @@
 %{
+    
 #include <stdio.h>
 #include <stdlib.h>
 
 void yyerror(const char *s);
 int yylex();
+
 %}
 
-%token NUMBER
-%token PLUS MINUS MULTIPLY DIVIDE EOL
+%token TEOF TIDEN TNUM TASSIGN TADD TMUL TDIV TSEMI TDOT TERROR
 
-%left PLUS MINUS
-%left MULTIPLY DIVIDE
-%nonassoc EOL
+%left TADD
+%left TMUL TDIV
+
 
 %%
-input:
-    /* 빈 줄 허용 */
-    | input line
-    ;
-
-line:
-    expr EOL { printf("Result: %d\n", $1); }
-    | EOL
-    ;
 
 expr:
-    NUMBER
-    | expr PLUS expr      { $$ = $1 + $3; }
-    | expr MINUS expr     { $$ = $1 - $3; }
-    | expr MULTIPLY expr  { $$ = $1 * $3; }
-    | expr DIVIDE expr    { 
-                            if ($3 == 0) {
-                                yyerror("Error: Division by zero");
-                                $$ = 0;
-                            } else {
-                                $$ = $1 / $3;
-                            }
-                          }
-    | '(' expr ')'        { $$ = $2; }
+    expr TADD expr         { printf("Add operation\n"); $$ = $1 + $3; }
+    | expr TMUL expr       { printf("Multiply operation\n"); $$ = $1 * $3; }
+    | expr TDIV expr       { printf("Division operation\n"); $$ = $1 / $3; }
+    | TNUM                 { $$ = atoi(yytext); }
+    | TIDEN
     ;
 
 %%
