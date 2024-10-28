@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: Grant execute permission to configure
+      run: chmod +x ./configure  # 실행 권한 부여
     - name: configure
       run: ./configure
     - name: make
