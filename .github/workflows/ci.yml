@@ -17,10 +17,11 @@ jobs:
       run: chmod +x ./configure  # 실행 권한 부여
     - name: configure
       run: ./configure
-    - name : cd isExpression
-      run : cd isExpression
+
     - name: make
-      run: make
+      run: |
+        cd isExpression
+        make
     - name: make check
       run: make check
     - name: make distcheck
