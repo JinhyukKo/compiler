@@ -8,7 +8,6 @@ digit  [0-9]
 
 %% /* 정의 부분 */
 {letter}({letter}|{digit})* return(TIDEN);
-"="       return(yytext[0]);
 "+"       return(yytext[0]);
 "-"       return(yytext[0]);
 "*"       return(yytext[0]);
@@ -21,5 +20,5 @@ digit  [0-9]
 %%
 
 int yywrap() {
-    return 1;
+    return 0;
 }
