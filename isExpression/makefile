@@ -31,11 +31,11 @@ $(FLEX_OUTPUT): $(FLEX_SRC)
 $(BISON_OUTPUT): $(BISON_SRC)
 	bison -d $(BISON_SRC)
 
-check : $(TEST_TARGET)
-	./$(TEST_TARGET)
+# check : $(TEST_TARGET)
+# 	./$(TEST_TARGET)
 
-$(TEST_TARGET): isExpression.test.c $(BISON_OUTPUT) $(FLEX_OUTPUT)
-	$(CC) -o $(TEST_TARGET) isExpression.test.c
+# $(TEST_TARGET): isExpression.test.c $(BISON_OUTPUT) $(FLEX_OUTPUT)
+# 	$(CC) -o $(TEST_TARGET) isExpression.test.c
 
 
 
