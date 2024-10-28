@@ -405,8 +405,8 @@ static const yytype_int8 yyrhs[] =
 /* YYRLINE[YYN] -- source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,    15,    15,    18,    18,    18,    19,    19,    19,    20,
-      20,    20
+       0,    15,    15,    19,    19,    19,    20,    20,    20,    21,
+      21,    21
 };
 #endif
 
@@ -1314,12 +1314,13 @@ yyreduce:
 #line 15 "syntax.y"
     {
         printf("Expression evaluated.\n");
+        return 0;
     ;}
     break;
 
 
 /* Line 1267 of yacc.c.  */
-#line 1323 "syntax.tab.c"
+#line 1324 "syntax.tab.c"
       default: break;
     }
   YY_SYMBOL_PRINT ("-> $$ =", yyr1[yyn], &yyval, &yyloc);
@@ -1533,7 +1534,7 @@ yyreturn:
 }
 
 
-#line 21 "syntax.y"
+#line 22 "syntax.y"
 
 
 

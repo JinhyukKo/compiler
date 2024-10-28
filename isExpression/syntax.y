@@ -14,6 +14,7 @@ int yylex(); // Lex에서 정의한 yylex 함수 선언
 %%
 S : E ';'{
         printf("Expression evaluated.\n");
+        return 1;
     };
 E : E '+' T | E '-' T |  T ;
 T : T'*' F | T '/' F | F ;

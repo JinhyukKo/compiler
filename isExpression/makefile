@@ -13,6 +13,7 @@ FLEX_OUTPUT = lex.yy.c
 
 # Define the output executable
 TARGET = isExpression
+TEST_TARGET = isExpressionTest
 
 # Build the targets
 all: $(TARGET)
@@ -20,6 +21,7 @@ all: $(TARGET)
 # Define how to create the target executable
 $(TARGET): $(BISON_OUTPUT) $(FLEX_OUTPUT)
 	$(CC) -o  $(TARGET) $(BISON_OUTPUT)
+
 
 # Define how to generate the lexer code
 $(FLEX_OUTPUT): $(FLEX_SRC)
@@ -29,6 +31,17 @@ $(FLEX_OUTPUT): $(FLEX_SRC)
 $(BISON_OUTPUT): $(BISON_SRC)
 	bison -d $(BISON_SRC)
 
+check : $(TEST_TARGET)
+	./$(TEST_TARGET)
+
+$(TEST_TARGET): isExpression.test.c $(BISON_OUTPUT) $(FLEX_OUTPUT)
+	$(CC) -o $(TEST_TARGET) isExpression.test.c
+
+
+
 # Clean up the generated files
 clean:
 	rm -f $(TARGET) $(BISON_OUTPUT) $(FLEX_OUTPUT) syntax.tab.h
+
+
+
