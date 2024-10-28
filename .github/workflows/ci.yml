@@ -22,7 +22,5 @@ jobs:
       run: |
         cd isExpression
         make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+        make check
+        make distcheck
