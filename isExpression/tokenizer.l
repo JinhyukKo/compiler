@@ -20,5 +20,5 @@ digit  [0-9]
 %%
 
 int yywrap() {
-    return 0;
+    return 1;
 }
